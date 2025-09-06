@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>WhatsApp Hack Simulator — PRANK</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="brand">
+      <div class="dot"></div>
+      <h1>WhatsApp Hack Simulator</h1>
+    </div>
+    <div class="prank-badge">PRANK MODE — NOT REAL</div>
+  </header>
+
+  <main>
+    <section class="panel input-panel">
+      <label for="number">Enter WhatsApp Number</label>
+      <div class="input-row">
+        <input id="number" placeholder="+92 370 2073138" spellcheck="false" autocomplete="off">
+        <select id="server">
+          <option value="default">Auto select server</option>
+          <option value="rawalpindi">Server Rawalpindi</option>
+          <option value="lahore">Server Lahore</option>
+          <option value="karachi">Server Karachi</option>
+        </select>
+        <button id="startBtn" class="btn">Start Prank</button>
+      </div>
+      <div class="hint">This is a prank simulator for entertainment only</div>
+    </section>
+
+    <section class="panel status-panel">
+      <div class="small-info">
+        <div>Target</div>
+        <div id="targetDisplay">—</div>
+      </div>
+      <div class="small-info">
+        <div>Server</div>
+        <div id="serverDisplay">—</div>
+      </div>
+      <div class="small-info">
+        <div>Status</div>
+        <div id="statusDisplay">Idle</div>
+      </div>
+    </section>
+
+    <section class="panel console-panel">
+      <div class="console-header">
+        <div>Hacker Console</div>
+        <div class="console-controls">
+          <button id="clearLog" title="Clear log">Clear</button>
+          <button id="toggleSound" title="Toggle sound">🔊</button>
+        </div>
+      </div>
+
+      <div id="console" class="console"></div>
+
+      <div class="progress-wrap">
+        <div id="progressBar" class="progress">
+          <div id="progressFill" class="progress-fill"></div>
+        </div>
+        <div class="progress-meta">
+          <span id="attempts">Attempts 0</span>
+          <span id="nextMsg">—</span>
+        </div>
+      </div>
+
+      <div class="final-msg" id="finalMsg">No access gained — this is a prank</div>
+    </section>
+  </main>
+
+  <footer>
+    <small>Designed for pranks only — do not use for real attack attempts</small>
+  </footer>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
